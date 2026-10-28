@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacte · Survival Anarko</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pagines/contacte.css">
+</head>
+<body>
+<!-- COMPONENT: header -->
+<header class="capcalera">
+    <h1 class="titol">Survival <span>Anarko</span></h1>
+    <p class="lema">fanzín digital · fet a mà · sense amos Ⓐ</p>
+    <nav class="menu" aria-label="Menú principal">
+        <a href="index.html">Inici</a>
+        <a href="manifest.html">Manifest</a>
+        <a href="sobre-mi.html">Sobre mi</a>
+        <a href="contacte.html">Contacte</a>
+    </nav>
+</header>
+<!-- /COMPONENT: header -->
+
+<div class="contenidor">
+    <main class="principal">
+        <article class="targeta">
+            <h2>Contacte</h2>
+            <!-- Només maquetació: sense backend, no envia res -->
+            <form class="formulari" action="#" method="post">
+                <label for="nom">Nom o àlies</label>
+                <input id="nom" name="nom" type="text" placeholder="Creeper_Anarko_99" required>
+                <label for="correu">Correu</label>
+                <input id="correu" name="correu" type="email" placeholder="tu@exemple.cat" required>
+                <label for="missatge">Missatge</label>
+                <textarea id="missatge" name="missatge" rows="6" placeholder="Escriu aquí..." required></textarea>
+                <button class="boto" type="submit">Envia</button>
+            </form>
+        </article>
+    </main>
+</div>
+
+<!-- COMPONENT: footer -->
+<footer class="peu">
+    <span class="estelada" role="img" aria-label="Estelada vermella"></span>
+    <p>Països Catalans · Ⓐ · <span class="segell">1312</span> <span class="segell">ACAB</span></p>
+    <p>Cap copyright: fotocopia'l, regala'l, enganxa'l a la paret. Fet amb HTML + CSS i zero amos.</p>
+</footer>
+<!-- /COMPONENT: footer -->
+</body>
+</html>

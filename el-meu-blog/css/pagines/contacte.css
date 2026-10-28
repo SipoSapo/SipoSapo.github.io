@@ -1,0 +1,8 @@
+/* === pagines/contacte.css: formulari (només maquetació) === */
+.targeta{max-width:640px;margin:0 auto}
+.formulari{display:grid;gap:var(--e1)}
+.formulari label{font-weight:700;text-transform:uppercase;font-size:.85rem}
+.formulari input,.formulari textarea{font:inherit;padding:.6rem;background:var(--blanc);color:var(--negre);
+  border:4px solid var(--negre);box-shadow:4px 4px 0 var(--vermell)}
+.formulari input:focus,.formulari textarea:focus{outline:4px solid var(--groc)}
+.formulari .boto{justify-self:start;margin-top:var(--e1)}

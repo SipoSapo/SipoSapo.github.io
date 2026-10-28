@@ -1,0 +1,4 @@
+/* === pagines/inici.css: només el que és propi de la portada === */
+.principal > .marcador{font-size:1.8rem}
+.targeta p{margin-bottom:var(--e1)}
+.lateral .widget .boto{font-size:.85rem}

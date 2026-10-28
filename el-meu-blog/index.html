@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survival Anarko · fanzín digital</title>
+    <!-- Ordre de càrrega: base → layout → components → pàgina -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pagines/inici.css">
+</head>
+<body>
+<!-- COMPONENT: header -->
+<header class="capcalera">
+    <h1 class="titol">Survival <span>Anarko</span></h1>
+    <p class="lema">fanzín digital · fet a mà · sense amos Ⓐ</p>
+    <nav class="menu" aria-label="Menú principal">
+        <a href="index.html">Inici</a>
+        <a href="manifest.html">Manifest</a>
+        <a href="sobre-mi.html">Sobre mi</a>
+        <a href="contacte.html">Contacte</a>
+    </nav>
+</header>
+<!-- /COMPONENT: header -->
+
+<div class="contenidor graella">
+    <main class="principal">
+        <h2 class="marcador">Últimes entrades</h2>
+
+        <!-- TARGETA D'ARTICLE: copia aquest bloc per afegir-ne una de nova -->
+        <article class="targeta">
+            <span class="badge">Anarquisme</span>
+            <h3><a href="articles/anarquisme-i-accio-directa.html">Acció directa: sí, però amb cervell</a></h3>
+            <p class="meta"><time datetime="2026-10-26">26 d'octubre de 2026</time></p>
+            <p>Spoiler: no va de trencar res. Va de muntar-te-la tu sense demanar permís.</p>
+            <a class="boto" href="articles/anarquisme-i-accio-directa.html">Llegir</a>
+        </article>
+
+        <article class="targeta">
+            <span class="badge">Minecraft</span>
+            <h3><a href="articles/minecraft-vs-capitalisme.html">Minecraft vs capitalisme</a></h3>
+            <p class="meta"><time datetime="2026-10-19">19 d'octubre de 2026</time></p>
+            <p>Al survival poses un bloc i tens casa. A la vida real et demanen un aval.</p>
+            <a class="boto" href="articles/minecraft-vs-capitalisme.html">Llegir</a>
+        </article>
+
+        <article class="targeta">
+            <span class="badge">Punk</span>
+            <h3><a href="articles/punk-catala-diy.html">Punk català i DIY: fes-t'ho tu</a></h3>
+            <p class="meta"><time datetime="2026-10-11">11 d'octubre de 2026</time></p>
+            <p>Fotocopiadora, tisores, cola i ganes. Ja tens fanzín.</p>
+            <a class="boto" href="articles/punk-catala-diy.html">Llegir</a>
+        </article>
+    </main>
+
+    <aside class="lateral" aria-label="Barra lateral">
+        <section class="widget">
+            <h3>Manifest exprés</h3>
+            <p>Ni amos ni caps. Antifeixisme cada dia. Els Països Catalans, fets de baix cap amunt.</p>
+            <a class="boto" href="manifest.html">Complet</a>
+        </section>
+
+        <section class="widget">
+            <h3>Coses que odio</h3>
+            <ul class="odi">
+                <li>Els lloguers abusius</li>
+                <li>Els feixistes i qui els fa la gara-gara</li>
+                <li>Les microtransaccions</li>
+                <li>El lag a les 3 de la matinada</li>
+                <li>El «jo no faig política»</li>
+            </ul>
+        </section>
+
+        <!-- Widget decoratiu de Minecraft -->
+        <section class="widget">
+            <h3>Dia 1.242</h3>
+            <div class="bloc-terra" role="img" aria-label="Bloc de terra pixelat"></div>
+            <div class="barra" aria-hidden="true"><span>pic</span><span>pa</span><span>torxa</span><span>llibre</span><span>Ⓐ</span></div>
+            <p><img class="pixel" src="assets/icones/creeper.svg" width="32" height="32" alt=""> Supervivència en curs. Diamants: 0. Amos: 0.</p>
+        </section>
+    </aside>
+</div>
+
+<!-- COMPONENT: footer -->
+<footer class="peu">
+    <span class="estelada" role="img" aria-label="Estelada vermella"></span>
+    <p>Països Catalans · Ⓐ · <span class="segell">1312</span> <span class="segell">ACAB</span></p>
+    <p>Cap copyright: fotocopia'l, regala'l, enganxa'l a la paret. Fet amb HTML + CSS i zero amos.</p>
+</footer>
+<!-- /COMPONENT: footer -->
+</body>
+</html>

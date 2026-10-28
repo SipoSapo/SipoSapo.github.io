@@ -1,0 +1,66 @@
+/* === components.css: peces reutilitzables === */
+
+/* Títol principal amb glitch subtil */
+.titol{font-size:clamp(2.2rem,9vw,4.6rem);transform:rotate(-1.5deg);animation:glitch 5s steps(1) infinite}
+.titol span{background:var(--vermell);color:var(--blanc);padding:0 .15em}
+@keyframes glitch{
+  0%,90%,100%{text-shadow:3px 0 var(--vermell),-3px 0 var(--verd-mc)}
+  92%{text-shadow:-5px 0 var(--vermell),5px 0 var(--groc);transform:rotate(-1.5deg) translateX(3px)}
+  95%{text-shadow:4px 0 var(--verd-mc),-4px 0 var(--vermell)}
+}
+@media (prefers-reduced-motion:reduce){.titol{animation:none}}
+.lema{margin-top:var(--e1);color:var(--groc);text-transform:uppercase;letter-spacing:.15em;font-size:.85rem}
+
+/* Menú: etiquetes de retall lleugerament rotades */
+.menu a{background:var(--blanc);color:var(--negre);border:4px solid var(--negre);box-shadow:4px 4px 0 var(--vermell);
+  padding:.2rem .9rem;font-weight:700;text-transform:uppercase;text-decoration:none;transform:rotate(-1.5deg)}
+.menu a:nth-child(even){transform:rotate(1.5deg)}
+.menu a:hover{background:var(--groc);transform:rotate(0) scale(1.05)}
+
+/* Subratllat de retolador */
+.marcador{display:inline-block;margin-bottom:var(--e3);box-shadow:inset 0 -.35em 0 var(--vermell)}
+
+/* Targeta amb cinta adhesiva */
+.targeta{position:relative;background:var(--blanc);color:var(--negre);border:4px solid var(--negre);box-shadow:var(--ombra-v);
+  padding:var(--e2);margin-bottom:var(--e3)}
+.targeta:nth-of-type(odd){transform:rotate(-.8deg)}
+.targeta:nth-of-type(even){transform:rotate(.8deg)}
+.targeta::before{content:"";position:absolute;top:-14px;left:40%;width:90px;height:26px;background:rgba(242,233,0,.75);transform:rotate(-4deg)}
+.targeta h2,.targeta h3{margin:var(--e1) 0}
+.targeta h3{font-size:1.6rem}
+.targeta h3 a{color:inherit}
+
+.badge{display:inline-block;background:var(--negre);color:var(--groc);padding:0 .5rem;font-size:.75rem;text-transform:uppercase}
+.meta{font-size:.8rem;margin-bottom:var(--e1)}
+
+/* Botó */
+.boto{display:inline-block;background:var(--vermell);color:var(--blanc);border:4px solid var(--negre);box-shadow:var(--ombra-g);
+  padding:.4rem 1.1rem;font:700 1rem var(--font-text);text-transform:uppercase;text-decoration:none}
+.boto:hover{background:var(--negre);color:var(--groc);box-shadow:2px 2px 0 var(--groc);transform:translate(4px,4px)}
+
+/* Widgets de la barra lateral */
+.widget{background:var(--negre);border:4px solid var(--blanc);box-shadow:var(--ombra-v);padding:var(--e2)}
+.widget h3{color:var(--groc);font-size:1.3rem;margin-bottom:var(--e1)}
+.widget p,.widget ul{margin-bottom:var(--e1);font-size:.9rem}
+.widget ul{list-style:none}
+.odi li::before{content:"✗ ";color:var(--vermell);font-weight:700}
+
+/* Decoració Minecraft */
+.pixel{image-rendering:pixelated;display:inline-block;vertical-align:middle}
+.bloc-terra{width:96px;height:96px;margin:0 auto var(--e1);border:4px solid var(--negre);outline:4px solid var(--blanc);
+  background:
+    linear-gradient(var(--verd-mc) 0 25%,transparent 25%),
+    linear-gradient(90deg,var(--terra-2) 25%,transparent 0) 0 0/32px 16px,
+    linear-gradient(var(--terra-3) 50%,transparent 0) 8px 0/24px 24px,
+    var(--terra-1)}
+.barra{display:flex;gap:4px;margin-bottom:var(--e1)}
+.barra span{flex:1;aspect-ratio:1;display:grid;place-items:center;border:3px solid var(--blanc);font-size:.65rem}
+
+/* Estelada vermella feta amb CSS */
+.estelada{position:relative;display:inline-block;width:72px;height:48px;margin-bottom:var(--e1);border:3px solid var(--blanc);
+  background:repeating-linear-gradient(var(--groc) 0 5.3px,var(--vermell) 5.3px 10.6px)}
+.estelada::before{content:"★";position:absolute;inset:0;padding:.8rem 0 0 .2rem;background:var(--vermell);color:var(--blanc);
+  clip-path:polygon(0 0,60% 50%,0 100%)}
+
+/* Segell de protesta */
+.segell{display:inline-block;border:3px solid var(--vermell);color:var(--vermell);padding:0 .4rem;font-weight:700;transform:rotate(-4deg)}

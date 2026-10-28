@@ -1,0 +1,16 @@
+/* === layout.css: estructura (header, nav, main, aside, footer) === */
+.capcalera{padding:var(--e3) var(--e2) var(--e2);text-align:center;border-bottom:4px solid var(--blanc)}
+.menu{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--e2);margin-top:var(--e2)}
+
+.contenidor{max-width:1040px;margin:0 auto;padding:var(--e3) var(--e2)}
+.graella{display:grid;grid-template-columns:2fr 1fr;gap:var(--e3);align-items:start}
+.principal{min-width:0}
+.lateral{display:grid;gap:var(--e3)}
+
+.peu{padding:var(--e3) var(--e2);text-align:center;border-top:4px solid var(--blanc);font-size:.85rem}
+
+/* Mòbil: la barra lateral baixa sota el contingut */
+@media (max-width:800px){
+  .graella{grid-template-columns:1fr}
+  .capcalera{padding-top:var(--e2)}
+}

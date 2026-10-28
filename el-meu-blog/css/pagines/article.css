@@ -1,0 +1,9 @@
+/* === pagines/article.css: articles, manifest i sobre-mi (text llarg) === */
+.article{background:var(--blanc);color:var(--negre);border:4px solid var(--negre);box-shadow:var(--ombra-v);
+  padding:var(--e3);max-width:760px;margin:0 auto}
+.article h2{font-size:clamp(1.8rem,5vw,3rem);margin-bottom:var(--e1)}
+.article p,.article ol,.article ul{margin-bottom:var(--e2)}
+.article ol,.article ul{padding-left:1.5rem}
+.article li{margin-bottom:var(--e1)}
+.manifest li::marker{color:var(--vermell);font-weight:700}
+.article a:not(.boto){color:var(--vermell)}

@@ -1,0 +1,39 @@
+/* === base.css: reset, variables (:root) i tipografia global ===
+   Per canviar la paleta o les fonts, toca NOMÉS el bloc :root. */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Mono:wght@400;700&display=swap");
+
+:root{
+  /* Paleta */
+  --negre:#0b0b0b;
+  --blanc:#f1ece1;      /* blanc trencat */
+  --vermell:#c1121f;    /* vermell sang */
+  --groc:#f2e900;       /* groc àcid */
+  --verd-mc:#5c9e31;    /* verd Minecraft */
+  /* Tons del bloc de terra decoratiu */
+  --terra-1:#7a5230; --terra-2:#4a3320; --terra-3:#5e4026;
+  /* Tipografies: títols tipus cartell de concert, text monoespaiat */
+  --font-titol:"Abril Fatface",Impact,serif;
+  --font-text:"Space Mono","Courier New",monospace;
+  /* Espaiats */
+  --e1:.5rem; --e2:1rem; --e3:2rem;
+  /* Ombres dures */
+  --ombra-v:6px 6px 0 var(--vermell);
+  --ombra-g:6px 6px 0 var(--groc);
+  /* Gra de fotocòpia (soroll SVG en línia) */
+  --gra:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+/* Cursor personalitzat (la ruta és relativa a aquest fitxer CSS) */
+html{cursor:url("../assets/icones/cursor.svg") 2 2,auto}
+a,button{cursor:pointer}
+
+body{background:var(--negre);color:var(--blanc);font:400 1rem/1.6 var(--font-text)}
+/* Capa de gra sobre tota la pàgina */
+body::after{content:"";position:fixed;inset:0;background:var(--gra);opacity:.12;pointer-events:none;z-index:99}
+
+h1,h2,h3{font-family:var(--font-titol);font-weight:400;line-height:1.1;text-transform:uppercase}
+a{color:var(--groc);text-underline-offset:.2em}
+a:hover{background:var(--groc);color:var(--negre)}
+img{max-width:100%;display:block}
